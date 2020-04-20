@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Covid19 Stats</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#"><img src="corona.png"></a>
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link blob" id="bright" href="/country.html">Stats Per Country
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--/.Navbar-->
+    <div class="display-4 mt-4 mb-4 ml-5">Global Statistics</div>
+    <div class="myContainer">
+        <canvas id="global_summary" class="chart" height="100"></canvas>
+    </div>
+    <!-- <div class="myContainer">
+        <canvas id="global_summary_dates" class="chart" height="100"></canvas>
+    </div> -->
+
+    <!-- Table -->
+    <div class="d-flex justify-content-between mb-1 myContainer2">
+        <p class="text-muted">You can sort every column by clicking on it's head</p>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2 mb-2" type="search" placeholder="Search.." aria-label="Search">
+        </form>
+    </div>
+    <table id="all_stats" class="table table-striped js-sort-table myContainer2" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th class="js-sort-number">Confirmed</th>
+                <th class="js-sort-number">Recovered</th>
+                <th class="js-sort-number">Critical</th>
+                <th class="js-sort-number">Deaths</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="js/chart.min.js"></script>
+    <script src="js/global.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+    <script src="js/sort-table.min.js"></script>
+</body>
+
+</html>

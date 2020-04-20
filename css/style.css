@@ -1,0 +1,87 @@
+body{
+    background-color: rgb(252, 252, 252);
+}
+
+.shine{
+    animation: fade 1s 6.5s forwards;
+}
+
+@keyframes fade {
+    25% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0.25;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.myContainer{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+}
+
+.chart{
+   margin: 0 0 50px 4vw ;
+}
+
+img{
+    height: 32px;
+}
+
+#country_search{
+    margin-top: -10px;
+}
+
+.myContainer2{
+    width: 90vw !important;
+    margin-left: 4vw;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
+}
+
+thead{
+    background-color: #4285F4;
+    color: whitesmoke;
+}
+
+.blob {
+	margin: 10px;
+	box-shadow: 0 0 0 0 rgb(228, 228, 228);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(228, 228, 228, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(228, 228, 228, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(228, 228, 228, 0);
+	}
+}
