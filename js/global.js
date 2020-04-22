@@ -46,8 +46,8 @@ fetch("https://covid-19-data.p.rapidapi.com/country/all?format=json", {
             `<tr class="countrie_search ${element.country}">
                 <td>${country_name}</td>
                 <td>${element.confirmed}</td>
-                <td>${element.deaths}</td>
                 <td>${element.recovered}</td>
+                <td>${element.critical}</td>
                 <td>${element.deaths}</td>
             </tr>`
         document.querySelector('tbody').innerHTML += row;
